@@ -10,7 +10,13 @@ export default {
         pastelOrange: {
           100: '#FDBBAA', 
           200: ' #F0E2E2', 
+        },
+        oil:{
+          100:"#4A4A4A",
+          200:"#003366 "
+
         }
+
       }, 
     },
   },
