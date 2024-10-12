@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "name": "Waffle",
+      "price": 4.99,
+      "imageUrl": "https://oishiso.jp/wp-content/uploads/2019/05/waffle.png"
+    },
+    {
+      "id": 2,
+      "name": "Pudding",
+      "price": 5.49,
+      "imageUrl": "https://oishiso.jp/wp-content/uploads/2024/03/Pudding.png"
+    },
+    {
+      "id": 3,
+      "name": "Cake",
+      "price": 7.99,
+      "imageUrl": "https://oishiso.jp/wp-content/uploads/2018/03/Shortcake.png"
+    },
+    {
+      "id": 4,
+      "name": "Ice Cream",
+      "price": 5.04,
+      "imageUrl": "https://oishiso.jp/wp-content/uploads/2019/04/vanillaIcecream.png"
+    },
+    {
+      "id": 5,
+      "name": "Dango",
+      "price": 7.08,
+      "imageUrl": "https://oishiso.jp/wp-content/uploads/2023/08/dango-mitarashi.png"
+    }
+  ]
+  

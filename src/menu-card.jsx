@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart} from '@fortawesome/free-solid-svg-icons'; 
+import MenuData from './data/menu.json';
 
 // the function below is the one item that I will state or un-state by the handleCartsclick.
 function MenuCard({ item,handleCartsClick,isInCart }) {
@@ -13,9 +14,9 @@ function MenuCard({ item,handleCartsClick,isInCart }) {
       </div>
       <div className="flex justify-end p-4">
       <button onClick={() => handleCartsClick(item)} className="flex items-center justify-center text-white bg-oil-200 hover:bg-oil-300 py-2 px-4 gap-2 rounded-lg transition-transform transform hover:scale-105">
-          {/* ボタンの内容を切り替え */}
-          {isInCart ? 'Remove from Cart' : 'Add to Cart'}
-          {/* アイコンを表示 */}
+    
+          {isInCart ? 'Remove' : 'Add to Cart'}
+
           <FontAwesomeIcon icon={faShoppingCart} />
         </button>
       </div>
