@@ -13,8 +13,11 @@ function MenuCard({ item,handleCartsClick,isInCart }) {
         <p className="text-gray-600 text-xl font-semibold">${item.price.toFixed(1)}</p> 
       </div>
       <div className="flex justify-end p-4">
+
+      {/* Calls handleCartsClick with the current item on click */}
       <button onClick={() => handleCartsClick(item)} className="flex items-center justify-center text-white bg-oil-200 hover:bg-oil-300 py-2 px-4 gap-2 rounded-lg transition-transform transform hover:scale-105">
-    
+      
+      {/* Button text changes based on whether the item is in the cart */}
           {isInCart ? 'Remove' : 'Add to Cart'}
 
           <FontAwesomeIcon icon={faShoppingCart} />

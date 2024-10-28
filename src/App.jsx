@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import Header from "./header";
 import Banner from "./Banner";
 import MenuCard from "./menu-card";
-import MenuData from './data/menu.json'; 
+import Footer from "./footer";
+
 
 
 // import the card component I have created
@@ -78,16 +79,27 @@ function App() {
 
 
   const handleCartsClick = (item) => {
+    // Check if the item is already in the carts array
     if (carts.includes(item)) {
+      // If the item is already in the cart, filter it out
       const newCarts = carts.filter((singleItem) => singleItem !== item);
+      
+      // Update the carts state with the new carts array (without the removed item)
       addCarts(newCarts); // updates
+      
+      // Log a message to the console indicating that an item was removed
       console.log("An item is removed");
     } else {
+      // If the item is not in the cart, log the item to the console
       console.log(item); 
+      
+      // Add the clicked item to the carts array by creating a new array with the existing items and the new item
       addCarts([...carts, item]); // Adds the clicked item to the carts array
+      
+      // Log a message to the console indicating that an item was added
       console.log("An item is added");
     }
-  };
+  }; 
 
 
 
@@ -96,7 +108,7 @@ function App() {
     <main className="bg-gradient-to-r from-pastelOrange-100 to-pastelOrange-200 min-h-screen">
       <Header /> 
       <Banner/>
-      <div className="mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 container">
+      <div className="mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 container p-8">
         {/* This is a map method passes through the menuItems array, 
         and each element (in this case, item refers to a menu item object) is passed to the MenuCard component */}
         {menuItems.map((item) => (
@@ -105,6 +117,7 @@ function App() {
         {/* key should be added and unique that prevent warning in the console */}
         {/* item - Inside the MenuCard component, I can access this prop to get details about the menu item */}
       </div>
+      <Footer />
     </main>
   );
 }
