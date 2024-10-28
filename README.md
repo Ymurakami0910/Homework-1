@@ -7,3 +7,19 @@ Tailwind CSS for styling
 Responsive Design for all devices
 JSON-based Product Data for dynamic display
 Three Component Levels for organization
+
+Setup
+
+1. Clone the repository:
+git clone <repository_url>
+cd Project-1
+
+2. Install dependencies
+npm install
+
+3. Run the project:
+npm run dev
+
+Challenges
+State Management for favoriting, solved with useState.
+Responsive Design using Tailwind’s utility classes.
